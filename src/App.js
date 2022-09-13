@@ -46,6 +46,8 @@ const App = () => {
       <LoggedIn data={Data} />
       {/* {status} */}
       <LoginButton text={loggedIn ? 'You are logged in' : 'You are not logged in'} onClick={onLoggedIn} />
+      
+      {!loggedIn && (<p>Please log in</p>)}
     </div>
   );
 };

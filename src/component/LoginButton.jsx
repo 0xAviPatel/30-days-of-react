@@ -5,7 +5,9 @@ const LoginButton = (props) => {
   // console.log("🚀 ~ LoginButton ~ text", text);
   return (
     <div>
+      {/* <button onClick={props.onClick}>{props.text}</button> */}
       <button onClick={props.onClick}>{props.text}</button>
+
     </div>
   );
 };
