@@ -3,7 +3,9 @@ import React, { useEffect, useState } from "react";
 const UseEffect = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
-    document.title = `Chats (${count})`
+    count === 0
+      ? (document.title = "Chats")
+      : (document.title = `Chats (${count})`);
   });
 
   return (
