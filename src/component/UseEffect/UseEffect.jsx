@@ -6,7 +6,7 @@ const UseEffect = () => {
     count === 0
       ? (document.title = "Chats")
       : (document.title = `Chats (${count})`);
-  });
+  }, [count]);
 
   return (
     <div>
